@@ -1996,6 +1996,8 @@ document.querySelectorAll('.accordion details').forEach(details => {
 
         return;
     }
+            const finalEndTime = performance.now();
+    console.log(`処理時間 (その他): ${(finalEndTime - startTime).toFixed(4)} ms`);
     }
 
 
@@ -7313,4 +7315,5 @@ function playNote(audioContext, currentTime, frequency, duration) {
 
 </script>
 </body>
+
 </html>
